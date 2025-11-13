@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary"
+    tools:context=".MainActivity">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:layout_above="@+id/footerContainer"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- APP TITLE -->
+            <TextView
+                android:id="@+id/appTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/app_name"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:fontFamily="@font/gethania"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:id="@+id/appDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_description"
+                android:textSize="16sp"
+                android:textColor="?attr/colorPrimary"
+                android:gravity="center"
+                android:layout_marginBottom="28dp" />
+
+            <!-- BUTTONS -->
+            <Button
+                android:id="@+id/btnThemes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thems"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_bg"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:id="@+id/btnBackAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_bg"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shareApp"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_bg"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sendFeedback"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_bg"
+                android:layout_marginBottom="20dp" />
+
+            <!-- FOLLOW US -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/follow"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+                <!-- Facebook -->
+                <ImageButton
+                    android:id="@+id/linkFacebook"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_facebook_circle"
+                    android:src="@drawable/ic_facebook"
+                    android:contentDescription="Facebook"
+                    android:tint="@android:color/white"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:clipToOutline="true" />
+
+                <!-- Instagram -->
+                <ImageButton
+                    android:id="@+id/linkInstagram"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_instagram_circle"
+                    android:src="@drawable/ic_instagram"
+                    android:contentDescription="Instagram"
+                    android:tint="@android:color/white"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:clipToOutline="true" />
+
+                <!-- Twitter -->
+                <ImageButton
+                    android:id="@+id/linkTwitter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_twitter_circle"
+                    android:src="@drawable/ic_twitter"
+                    android:contentDescription="Twitter"
+                    android:tint="@android:color/white"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:clipToOutline="true" />
+
+                <!-- GitHub -->
+                <ImageButton
+                    android:id="@+id/linkGithub"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_github_circle"
+                    android:src="@drawable/ic_github"
+                    android:contentDescription="GitHub"
+                    android:tint="@android:color/white"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:clipToOutline="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FOOTER (Version + Copyright) -->
+    <LinearLayout
+        android:id="@+id/footerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/appVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 0.1"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/appCopyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            android:textColor="#777777"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</RelativeLayout>

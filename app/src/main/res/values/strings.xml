@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App name -->
+    <string name="app_name">String Flow Live Wallpaper</string>
+
+    <!-- Main buttons -->
+    <string name="set_wallpaper">Set Wallpaper</string>
+    <string name="adv_setting">Advanced Settings</string>
+    <string name="more">More</string>
+
+    <!-- Advanced Settings -->
+    <string name="advanced_settings">Advanced Settings</string>
+    <string name="speed_control">Speed Control</string>
+    <string name="wave_lines_control">Number of Lines</string>
+
+    <!-- Theme presets -->
+    <string name="label_none">None (Custom Color)</string>
+    <string name="label_k1">Glowing RGB</string>
+    <string name="label_k2">Bold White Line</string>
+    <string name="label_k3">Black bg, White line</string>
+    <string name="label_k4">Neon Pulse</string>
+
+    <!-- More Screen -->
+    <string name="app_description">
+        A beautiful flowing string live wallpaper with customizable themes and smooth animations.
+    </string>
+    <string name="thems">Themes</string>
+    <string name="about">About</string>
+    <string name="shareApp">Share App</string>
+    <string name="sendFeedback">Send Feedback</string>
+    <string name="follow">Follow Us</string>
+    <string name="copyright">© 2025 KhotApps. All rights reserved.</string>
+
+</resources>

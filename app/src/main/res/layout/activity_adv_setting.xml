@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advanced_settings"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Wave Preview -->
+        <com.khotapps.stringflowlivewallpaper.WavePreviewView
+            android:id="@+id/wavePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- STYLE SELECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Style"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="14dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/radio_none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_none"
+                android:textSize="18sp"
+                android:paddingVertical="12dp"
+                android:buttonTint="#00D4FF" />
+
+            <RadioButton android:id="@+id/radio_k1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_k1"
+                android:textSize="18sp"
+                android:paddingVertical="12dp"
+                android:buttonTint="#00D4FF" />
+
+            <RadioButton android:id="@+id/radio_k2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_k2"
+                android:textSize="18sp"
+                android:paddingVertical="12dp"
+                android:buttonTint="#00D4FF" />
+
+            <RadioButton android:id="@+id/radio_k3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_k3"
+                android:textSize="18sp"
+                android:paddingVertical="12dp"
+                android:buttonTint="#00D4FF" />
+
+            <RadioButton android:id="@+id/radio_k4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_k4"
+                android:textSize="18sp"
+                android:paddingVertical="12dp"
+                android:buttonTint="#00D4FF" />
+        </RadioGroup>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2C2C2C"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Speed Control -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed_control"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp" />
+
+        <SeekBar
+            android:id="@+id/seekSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50" />
+
+        <TextView
+            android:id="@+id/txtSpeedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed: 50"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Number of Lines (1–10) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wave_lines_control"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp" />
+
+        <SeekBar
+            android:id="@+id/seekLines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="9"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/txtLinesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lines: 1"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Line Thickness -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line Thickness"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp" />
+
+        <SeekBar
+            android:id="@+id/seekThickness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="2" />
+
+        <TextView
+            android:id="@+id/txtThicknessValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thickness: 4dp"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Line Spacing -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line Spacing"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp" />
+
+        <SeekBar
+            android:id="@+id/seekPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="60"
+            android:progress="15" />
+
+        <TextView
+            android:id="@+id/txtPaddingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spacing: 15dp"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Custom Color (only for "None") -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp" />
+
+        <Button
+            android:id="@+id/btnColorPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Color"
+            android:backgroundTint="#00D4FF"
+            android:enabled="false"
+            android:layout_marginBottom="10dp" />
+
+        <View
+            android:id="@+id/viewColorPreview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00D4FF"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+</ScrollView>
