@@ -45,7 +45,7 @@ If you want to build the project yourself:
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/](https://github.com/)[YOUR_USERNAME]/WaveWallpaper.git
+    git clone [https://github.com/](https://github.com/)[bhaitigam]/String-Flow-Live-Wallpaper.git
     ```
 2.  **Open in Android Studio:**
     Open the cloned directory in the latest stable version of Android Studio.
@@ -89,6 +89,6 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 
 ## 📧 Contact
 
-[Your Name] - [@YourTwitterHandle] - [your-email@example.com]
+[bhaiti gam] - [@YourTwitterHandle] - [bhaitigam71@.com]
 
-Project Link: [https://github.com/YOUR_USERNAME/WaveWallpaper](https://github.com/YOUR_USERNAME/WaveWallpaper)
+Project Link: [https://github.com/bhaitigam/String-Flow-Live-Wallpaper.git](https://github.com/bhaitigam/String-Flow-Live-Wallpaper.git)
