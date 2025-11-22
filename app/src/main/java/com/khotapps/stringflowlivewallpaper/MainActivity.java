@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
     private InterstitialAd mInterstitialAd;
 
     // TEST AD UNIT IDs (GUARANTEED TO SHOW)
-    private static final String BANNER_TEST_ID = "ca-app-pub-3940256099942544/6300978111";
-    private static final String INTERSTITIAL_TEST_ID = "ca-app-pub-3940256099942544/1033173712";
+    private static final String BANNER_TEST_ID = "@";
+    private static final String INTERSTITIAL_TEST_ID = "@";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,13 +73,13 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onAdLoaded(InterstitialAd interstitialAd) {
                         mInterstitialAd = interstitialAd;
-                        Log.d(TAG, "TEST INTERSTITIAL LOADED");
+//                        Log.d(TAG, "TEST INTERSTITIAL LOADED");
                     }
 
                     @Override
                     public void onAdFailedToLoad(LoadAdError error) {
                         mInterstitialAd = null;
-                        Log.e(TAG, "TEST AD FAILED: " + error.getMessage());
+//                        Log.e(TAG, "TEST AD FAILED: " + error.getMessage());
                     }
                 });
     }

@@ -28,7 +28,7 @@ public class AboutActivity extends AppCompatActivity {
 
         // Open Privacy Policy link
         linkPrivacy.setOnClickListener(v -> {
-            String url = "https://your-privacy-policy-url.com"; // <-- Replace with your real privacy policy link
+            String url = "https://kavingam.github.io/stringflow-privacy/"; // <-- Replace with your real privacy policy link
             openLink(url);
         });
 

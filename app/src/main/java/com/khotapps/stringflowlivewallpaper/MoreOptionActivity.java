@@ -49,10 +49,10 @@ public class MoreOptionActivity extends AppCompatActivity {
         btnAbout.setOnClickListener(v -> startActivity(new Intent(this, AboutActivity.class)));
 
         btnShare.setOnClickListener(v -> shareApp());
-        linkFacebook.setOnClickListener(v -> openLink("https://facebook.com/khotapps"));
-        linkInstagram.setOnClickListener(v -> openLink("https://instagram.com/khotapps"));
-        linkTwitter.setOnClickListener(v -> openLink("https://twitter.com/khotapps"));
-        linkGithub.setOnClickListener(v -> openLink("https://github.com/kavingam/StringFlowLiveWallpaper"));
+        linkFacebook.setOnClickListener(v -> openLink("https://facebook.com/"));
+        linkInstagram.setOnClickListener(v -> openLink("https://instagram.com/kavin.gam"));
+        linkTwitter.setOnClickListener(v -> openLink("https://twitter.com/"));
+        linkGithub.setOnClickListener(v -> openLink("https://github.com/kavingam/String-Flow-Live-Wallpaper"));
 
         btnFeedback.setOnClickListener(v -> sendFeedback());
     }
