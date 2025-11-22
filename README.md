@@ -45,7 +45,7 @@ If you want to build the project yourself:
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/](https://github.com/)[bhaitigam]/String-Flow-Live-Wallpaper.git
+    git clone https://github.com/bhaitigam/String-Flow-Live-Wallpaper.git
     ```
 2.  **Open in Android Studio:**
     Open the cloned directory in the latest stable version of Android Studio.
